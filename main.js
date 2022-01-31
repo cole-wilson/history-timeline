@@ -112,11 +112,11 @@ addScene("#nuke", 300, function (percent, duration) {
 		$("#boom").attr("src", img.src);
 	}
 }, () => {$("#space").show()}, () => {$("#space").hide()})
-addScene("#cyber", 50, function (percent, duration) {
+addScene("#cyber", 100, function (percent, duration) {
 	const img = new Image()
 	img.src = `cmatrix/1.png`
 	img.onload = function () {
 		$("#cmatrix").attr("src", img.src);
 	}
 })
-addScene("#final", 100)
+addScene("#final", 9000)

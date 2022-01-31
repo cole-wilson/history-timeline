@@ -1,0 +1,137 @@
+.scrollmagic-pin-spacer {
+	pointer-events: none!important;
+}
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: lightgrey transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+#fireworks {
+	width: 100vw;
+	object-fit: cover;
+	transform: translateY(-30vh);	
+}
+.full {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+pre {
+	width: 100%;
+	overflow-x: auto;
+}
+*::-webkit-scrollbar-track {background: #0000;}
+
+*::-webkit-scrollbar-thumb {
+  background-color: lightgrey;
+  border-radius: 20px;
+}
+html {
+	background: black;
+	width: 100vw;
+	height: 100vh;
+}
+body {
+	position: relative;
+	overflow-y: overlay;
+	margin: 0;
+	overflow-x: hidden;
+}
+.trigger {
+	position: absolute;
+}
+h2 {text-transform: uppercase}
+.vcenter {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.text {
+	max-height: 80vh;
+	overflow-y: auto;
+	max-width: 60%;
+	background: #888e;
+}
+p, pre {
+	text-align: left;
+	padding: 0 10px 0;
+}
+figcaption {
+	font-style: italic;
+}
+section {
+	position: absolute;
+	background: black;
+	color: white;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	z-index: -1;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.2s;
+}
+section.visible {
+  opacity: 1;
+  transition: opacity 0.2s;
+  pointer-events: all;
+}
+#spacer {
+	height: 100vh;
+	width: 100vw;
+}
+.star {
+	position: absolute;
+	border-radius: 100%;
+	/* background: white; */
+	opacity: 0;
+	z-index: -1;
+}
+section {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#rock {
+	background-image: url(https://sp-images.summitpost.org/524235.JPG?auto=format&fit=max&h=1000&ixlib=php-2.1.1&q=35&s=5410e3733943161f002b944afc05e2c6);
+}
+#bow {
+	background-image: url(http://cdn.cnn.com/cnnnext/dam/assets/150907165336-beautiful-mongolia12-all-that-space-2.jpg);
+}
+figure img {
+	width: 300px;
+}
+#s1, #s2 {
+	display: inline-block;
+	height: 40vh;
+}
+#horses {position: fixed; bottom: 0px; right: 0; width: 150px}
+.arrow img {width: 20px;}
+.arrow {position: fixed;}
+#loader {
+	z-index: 1000;
+	position: fixed;
+	background: black;
+	text-align: center;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	padding-top: 45vh;
+	color: white;
+}
+#icbm {
+	width: 100px
+}
